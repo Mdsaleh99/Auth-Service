@@ -25,3 +25,6 @@ https://github.com/lint-staged/lint-staged , `npm install --save-dev lint-staged
 9. ExpressJS setup ===>   `npm i -D ts-node` when we install this nodemon internally runs this ts-node for typescript
 
 10. Logger setup  ===>  `npm i winston` , `npm i -D @types/winston`   https://github.com/winstonjs/winston
+
+
+11. Error handling ===> `npm install http-errors` ,`npm install -D @types/http-errors `       https://github.com/jshttp/http-errors#readme
