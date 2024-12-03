@@ -1,0 +1,27 @@
+1. Git setup
+
+2. Node version Manager setup  => https://github.com/coreybutler/nvm-windows/releases
+https://github.com/nvm-sh/nvm?tab=readme-ov-file   
+study about nodejs releases timeline => https://nodejs.org/en/about/previous-releases 
+
+3. Nodejs Project setup
+
+4. Typescript setup => `npm install -D typescript` , `npx tsc --init`, to compile ts file=> `npx tsc`     and we have define type definition to typescript so we install node types and other package types to use typescript `npm i -D @types/node`
+
+5.  Prettier setup ==> format all files with Prettier=>`npx prettier . --write` 
+    https://prettier.io/docs/en/install
+    https://eslint.org/docs/latest/rules/
+
+
+6. Eslint setup  ===> `npm install --save-dev eslint @eslint/js typescript typescript-eslint` , https://typescript-eslint.io/getting-started
+
+
+7. Git hooks setup ===> `npm install --save-dev husky` , `npx husky init` , https://typicode.github.io/husky/get-started.html
+https://github.com/lint-staged/lint-staged , `npm install --save-dev lint-staged`
+
+
+8. Application config setup
+
+9. ExpressJS setup ===>   `npm i -D ts-node` when we install this nodemon internally runs this ts-node for typescript
+
+10. Logger setup  ===>  `npm i winston` , `npm i -D @types/winston`   https://github.com/winstonjs/winston

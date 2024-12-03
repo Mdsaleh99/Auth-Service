@@ -1,0 +1,37 @@
+Assignment: Mastering Node Version Management
+
+Assignment: Node Version Manager (NVM) Basics and Usage
+
+Objective:
+To demonstrate your understanding of installing, managing, and using multiple versions of Node.js using Node Version Manager (NVM).
+
+Requirements:
+
+NVM Installation:
+Install NVM according to your operating system.
+Use a terminal or command prompt command to confirm NVM has been successfully installed.
+
+Managing Node Versions with NVM:
+List all the available versions of Node.js.
+Install the latest stable version of Node.js.
+Install another older version of Node.js for testing purposes (e.g., a version from a year ago).
+Confirm the installed versions using NVM.
+Set one of the installed versions as the default Node version.
+
+Switching Between Node Versions:
+Use NVM to switch to the older version you installed.
+Confirm the version switch using a terminal command.
+Switch back to the latest version and confirm the switch.
+
+Creating a Sample Project:
+Initialize a new Node.js project using the npm init command.
+Create a simple app.js file that logs the current Node.js version.
+Run this file under both Node versions (latest and older) and observe the output.
+
+Uninstalling a Node Version:
+Uninstall the older version of Node.js that you previously installed.
+Confirm that the version has been removed using NVM.
+
+Updating NVM:
+Research how to update NVM to its latest version for your operating system.
+Update NVM and confirm the successful update with a terminal command.
