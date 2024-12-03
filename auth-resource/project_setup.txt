@@ -28,3 +28,12 @@ https://github.com/lint-staged/lint-staged , `npm install --save-dev lint-staged
 
 
 11. Error handling ===> `npm install http-errors` ,`npm install -D @types/http-errors `       https://github.com/jshttp/http-errors#readme
+
+12. Automated Tests setup  ===>  `npm install --save-dev jest` https://jestjs.io/docs/getting-started#via-ts-jest       `npm install --save-dev ts-jest`
+https://kulshekhar.github.io/ts-jest/docs/getting-started/installation/#jest-config-file
+`npx ts-jest config:init`
+`npm install --save-dev @types/jest`
+
+Integration test:
+`npm install supertest --save-dev`  ==> this is for test rest api
+`npm install @types/supertest --save-dev`

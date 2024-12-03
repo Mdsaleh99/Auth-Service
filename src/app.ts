@@ -1,12 +1,12 @@
 import express, { NextFunction, Request, Response } from 'express'
-import createHttpError, { HttpError } from 'http-errors'
+import { HttpError } from 'http-errors'
 import logger from './config/logger'
 
 const app = express()
 
 app.get('/', (req, res) => {
-    const err = createHttpError(401, 'You can not access this route')
-    throw err // this error catch by global error handler
+    // const err = createHttpError(401, 'You can not access this route')
+    // throw err // this error catch by global error handler
     res.send('Welcome')
 })
 // app.get('/', async(req, res, next) => {
