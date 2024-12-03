@@ -39,5 +39,5 @@ Integration test:
 `npm install @types/supertest --save-dev`
 
 
-13. Project Template ===> git remote -v , if we want to add another remote to same directory we use git remote add <name> <remote_url from github>
+13. Project Template ===> we can add multiple remotes in one repository. git remote -v , if we want to add another remote to same directory we use git remote add <name> <remote_url from github>
 when we want to push code in template we have to use `git push template main` and if we want to push code in origin we have to use `git push` because we have already setted upstream like this `git push -u origin main`
