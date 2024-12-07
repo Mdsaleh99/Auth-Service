@@ -7,7 +7,7 @@ const app = express()
 app.get('/', (req, res) => {
     // const err = createHttpError(401, 'You can not access this route')
     // throw err // this error catch by global error handler
-    res.send('Welcome')
+    res.send('Welcome to Auth service..')
 })
 // app.get('/', async(req, res, next) => {
 //     const err = createHttpError(401, "You can not access this route")
