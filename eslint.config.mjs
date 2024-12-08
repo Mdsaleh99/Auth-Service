@@ -23,6 +23,7 @@ export default tseslint.config(
         },
         rules: {
             '@typescript-eslint/no-misused-promises': 'off',
+            "dot-notation": "error",
         },
     },
 )
