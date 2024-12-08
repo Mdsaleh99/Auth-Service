@@ -4,7 +4,6 @@ import logger from "./config/logger";
 
 const startServer = () => {
     const PORT = Config.PORT;
-    console.log(PORT);
 
     try {
         app.listen(PORT, () => {
