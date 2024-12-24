@@ -1,14 +1,14 @@
 import "reflect-metadata";
+
 import express, { NextFunction, Request, Response } from "express";
 import { HttpError } from "http-errors";
 import logger from "./config/logger";
 import authRouter from "./routes/auth.routes";
 
 const app = express();
+app.use(express.json());
 
 app.get("/", (req, res) => {
-    // const err = createHttpError(401, 'You can not access this route')
-    // throw err // this error catch by global error handler
     res.send("Welcome to Auth Service..");
 });
 // app.get('/', async(req, res, next) => {
@@ -18,11 +18,9 @@ app.get("/", (req, res) => {
 //     res.send('Welcome')
 // })
 
-// global error handler
-// it is a middleware
-
 app.use("/auth", authRouter);
 
+// global error handler - it is a middleware
 // this below line i have added from quick fix because it giving error for next is defined and never used
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
