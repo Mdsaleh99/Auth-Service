@@ -24,6 +24,8 @@ export default tseslint.config(
         rules: {
             "@typescript-eslint/no-misused-promises": "off",
             "dot-notation": "error",
+            "no-unused-vars": "off",
+            "@typescript-eslint/no-unused-vars": "off",
         },
     },
 );

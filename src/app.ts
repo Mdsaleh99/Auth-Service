@@ -21,8 +21,6 @@ app.get("/", (req, res) => {
 app.use("/auth", authRouter);
 
 // global error handler - it is a middleware
-// this below line i have added from quick fix because it giving error for next is defined and never used
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
     logger.error(err.message);
     const statusCode = err.statusCode || 500;
