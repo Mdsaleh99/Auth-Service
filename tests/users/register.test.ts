@@ -3,7 +3,6 @@ import app from "../../src/app";
 import request from "supertest";
 import { User } from "../../src/entity/User";
 import { AppDataSource } from "../../src/config/data-source";
-import { truncateTables } from "../utils";
 import { Roles } from "../../src/constants";
 
 describe("POST /auth/register", () => {
@@ -175,5 +174,23 @@ describe("POST /auth/register", () => {
         });
     });
 
-    describe("Fields are missing", () => {});
+    describe("Fields are missing", () => {
+        it("should return 400 status code if email is missing", async () => {
+            // Arrange
+            const userData = {
+                firstName: "Saleh",
+                lastName: "Mulla",
+                email: "",
+                password: "secret",
+            };
+
+            // Act
+            const response = await request(app)
+                .post("/auth/register")
+                .send(userData);
+
+            // Assert
+            expect(response.statusCode).toBe(400);
+        });
+    });
 });

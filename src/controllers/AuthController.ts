@@ -2,6 +2,7 @@ import { NextFunction, Response } from "express";
 import { RegisterUserRequest } from "../types";
 import { UserService } from "../services/UserService";
 import { Logger } from "winston";
+import createHttpError from "http-errors";
 
 // AuthController depends on UserService for user-related operations.
 // Instead of creating an instance of UserService internally, it is injected into the constructor.
@@ -24,6 +25,11 @@ export class AuthController {
         next: NextFunction,
     ) {
         const { firstName, lastName, email, password } = req.body;
+        if (!email) {
+            const err = createHttpError(400, "Email is required");
+            throw err;
+        }
+
         this.logger.debug("New request to a register user", {
             firstName,
             lastName,
